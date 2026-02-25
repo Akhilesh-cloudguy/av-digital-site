@@ -647,3 +647,13 @@ h1, h2, h3, h4, h5, h6, .display-1, .display-2, .display-3, .display-4, .display
 .quick-links-col {
     min-height: 1px;
 }
+
+/* Premium hover effect for service cards */
+.service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
