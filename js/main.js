@@ -47,10 +47,10 @@
     });
     console.log($videoSrc);
     $('#videoModal').on('shown.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        var promoVideo = $("#video")[0]; promoVideo.src = $videoSrc; promoVideo.play();
     })
     $('#videoModal').on('hide.bs.modal', function (e) {
-        $("#video").attr('src', $videoSrc);
+        var promoVideo = $("#video")[0]; promoVideo.pause(); promoVideo.removeAttribute("src"); promoVideo.load();
     })
 
 
