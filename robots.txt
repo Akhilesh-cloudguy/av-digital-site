@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://akhilesh-cloudguy.github.io/av-digital-site/sitemap.xml
